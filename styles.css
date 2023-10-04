@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* This colour was chosen for the navigation bar as this shade of blue represents healthcare */
+nav{
+    background: #008BB0;
+    height: 90px;
+    width: 100%;
+}
+/* Initails dimensions of the logo */
+label.logo{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+/* Dimensions of the logo after the the user hovers on the logo */
+label.logo:hover {
+    font-size:50px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+/* The page selection hover to the right of the navigation bar*/
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+/*keeps the navigation bar pages in a spaced out horizontal line */
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+/*colour and font of the text*/
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+/*background of the writing will slightly change colour when either you're on the specified page or hovering over a page selection*/
+a.active, a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+/*the design for the three bars*/
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*background colour of the home page  */
+.border{
+    background-color: #fff;
+}
+
+.border1{
+    background-color: #f5f5f5;
+}
+/*font and size of the text*/
+p {
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+/*header for the homepage name of product*/
+h2 {
+    font-size: 30px;
+    padding: 15px;
+    font-family: 'Poppins',sans-serif;
+    text-align:center;
+}
+/*header for the 'Benefits' eord on the product pages*/
+h3 {
+    font-size: 50px;
+    padding: 300px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+/*header for the price of the product on the product pages*/
+h4 {
+    font-size: 23px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+    text-align:center;
+}
+
+
+#check{
+    display: none;
+}
+/*adjusts the logo and the navigation bar pages to fit the page */
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+/*adjusts the navigation bar pages to fit the page by making the options verticle */
+@media (max-width: 1049px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #008BB0;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: #1b9bff;
+        transition: .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/*width on of the pictce and description at 65% to make it easier to read*/
+.container{
+    margin: 0px auto;
+    width: 65%;
+    padding: 8px 8px;
+}
+/*size of the images inside the container div*/
+.container img
+{
+    height: 420px;
+    width: 450px;
+    padding-top: 30px;
+}
+/*adjust text for when text is on the right of the picture*/
+.text
+{
+    padding: 70px 0;
+    text-align: center;
+    margin-left: 500px;
+}
+/*adjust text for when text is on the left of the picture*/
+.text1
+{
+    padding: 70px 0;
+    text-align: center;
+    margin-right: 500px;
+}
+/*adjust text for when text for the about me section*/
+.text2{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 35px;
+}
+/*design of the footer*/
+.footer{
+	background-color: #008BB0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0px;
+}
+
+/*responsive for text footer and the home images*/
+@media(max-width: 1049px){
+.container img
+{
+    height: 100%;
+    width:100%;
+    padding-top: 90px;
+    padding-right: 15px;
+}
+.text
+{
+    margin-left: 0px;
+}
+
+.text1
+{
+    margin-right: 0px;
+}
+.text2{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 35px;
+}
+.footer li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+}
+/*responsive for text footer and the home images and logo*/
+@media(max-width: 768px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    padding-top: 0px;
+}
+.container img{
+    height: 90%;
+    width: 90%;
+    padding-top: 0px;
+}
+.text
+{
+    margin-left: 0px;
+}
+
+.text1
+{
+    margin-right: 0px;
+}
+
+label.logo{
+    color: #fff;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 50px;
+}
+label.logo:hover {
+    font-size:40px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+}
+/*responsive for text footer and the home images and logo*/
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    padding-top: 0px;
+}
+.text
+{
+    margin-left: 0px;
+}
+
+.text1
+{
+    margin-right: 0px;
+}
+}
+/*responsive for text footer and the home images and logo*/
+@media(max-width: 280px){
+label.logo{
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 50px;
+}
+label.logo:hover {
+    font-size:25px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+}
+
+/*allows for everything to fit on a page*/
+.small-container{
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+/*allows for product image and description to be side by side*/
+.row2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+/*keeps image and description in frame*/
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin: 25px 0;
+}
+/*size of the quantity box*/
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+}
+/*add to cart button*/
+.btn{
+    display: inline-block;
+    background: #008BB0;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 16px;
+    transition: background 0.5;
+    width: 100%;
+}
+/*add to cart button when hovering*/
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*design of the discover more button*/
+.btn2{
+    padding: 14px 25px; 
+    background-color: #008BB0; 
+    color: #fff; 
+    font-size: 15px; 
+    border-radius: 16px;
+}
+/*design of the discover more button when hovered*/
+.btn2:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*design of the footer*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+/*keeps the footer page selection horizontal*/
+.footer li{
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+}
+/*design for the social media icons*/
+.footer .social a{
+    font-size: 20px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+/*quantity box design*/
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #008BB0;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #008BB0;
+}
+
+/*when the icons and page selections are hovered over*/
+.footer .social a:hover {
+    opacity: 1;
+    background: none;
+}
+/*colour of the footer page design*/
+.footer .social2 {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #fff;
+    padding-top: 25px;
+}
+
+.footer .social2 a{
+    font-size: 20px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    margin: 0 40px;
+    opacity: 0.75;
+}
+
+.footer .social2 a:hover {
+    opacity: 1;
+    background: none;
+}
+/*footer copyright*/
+.footer .copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    opacity: 0.8;
+    padding-top: 15px;
+}
+
+/*style the image used to trigger the modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width:100%; 
+    margin-top: -350px;    
+}
+  
+#myImg:hover {opacity: 0.7;}
+  
+/* the modal background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+  
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 90%;
+    max-width: 700px;
+}
+  
+  
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #1b9bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*responsive for image */
+@media(max-width: 1049px){
+    #myImg {
+        margin-top: -1000px;  
+        margin-bottom: 50px; 
+    }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 820px){
+    /*design of the footer*/
+.footer{
+	background-color: #008BB0;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 0px;
+}
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 768px){
+    .modal-content {
+      width: 100%;
+    }
+    #myImg {
+        margin-top: -350px;  
+        margin-bottom: 150px; 
+    }
+    .footer{
+        background-color: #008BB0;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+}
+/*padding for the registration page*/
+.container1{
+    width: 100%;
+    padding: 3% 20%;
+    border-radius: 5px;
+}
+/*registration title*/
+.container1 .title{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 12px 0;
+    font-weight: bold;
+}
+
+.container1 form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*the registration input boxes design*/
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #008BB0;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin: 10px 0 12px 0;
+    
+}
+/*register button*/
+.register-button{
+    height: 45px;
+    margin: 45px 0;
+}
+/*register button design*/
+.register-button input{
+    height:100%;
+    color: #fff;
+    background: #008BB0;
+    border: none;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin: 0px 0 12px 0;
+}
+/*register button design when hovered over*/
+.register-button input:hover{
+    background: #1b9bff;
+    transition: .5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*responsiveness for the registration page*/
+@media (max-width: 584px) {
+    .container1{
+        max-width: 100%;
+        padding: 20px 35px;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #myImg {
+        margin-top: 0px;   
+        margin-bottom: 0px;
+    }
+
+}
+/*keeps the font choice and colour choice button in the bottom left of the screen*/
+.container0{
+    position: fixed;
+    bottom: 10px;
+    padding-left: 10px;
+}
+/*button design*/
+button{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #008BB0;
+    outline: 10px black;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Hypertrax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <!--the three bars icon has been implemented to cater for phones and tablets-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <!-- logo and nav bar pages-->
+        <label class="logo">GoPhysio.</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="product1.html">Hypertrax</a></li>
+            <li><a href="product2.html">Cervitrac</a></li>
+            <li><a href="product3.html">Knee-Pro</a></li>
+            <li><a href="product4.html">Lumbartrax</a></li>
+            <li><a href="product5.html">Muscle Gun</a></li>
+            <li><a href="Register.html">Register</a></li>
+        </ul>
+    </nav>
+    <div class="small-container single-product">
+        <div class="row2">
+            <div class="col-2">
+                <img id="myImg" src="cervical1.jpg" alt="">
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+            
+                </div>
+            </div>     
+            <div class="col-2">
+                <!--name of product-->
+                <h2 id="h1">Hypertrax</h2>
+                <!--price of product-->
+                <h4 id="h2">£150.00</h4>
+                <select style = width:100% style="text-align: center;">
+                    <!--allow the user to pick there qauntity they want-->
+                    <option style="text-align: center">Quantity</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <!--add to cart button-->
+                <a herf="" class="btn" style="text-align: center;">Add to Cart</a>
+                <!--description of the benefits of the product-->
+                <h4 id="h3" style=" text-align: left">Benefits</h4>
+                <p id="p1" style=" text-align: left">- Relieves painful neck and upper back stiffness</p>
+
+                <p id="p2" style=" text-align: left">- Natural curve of the neck is restored</p>
+
+                <p id="p3" style=" text-align: left">- Relieves pinched nerves</p>
+
+                <p id="p4" style=" text-align: left">- Treats whiplash Injuries</p>
+
+                <p id="p5" style=" text-align: left">- Range of motion and flxibilty is improved</p>
+
+                <p id="p6" style=" text-align: left">- Helps to manage joint, sprain, and spasm pain</p>
+
+                <br>
+                <!--video of the product-->
+                <video width= 100% controls>
+                    <source src="hypertrax.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container0">
+        <!--buttons that allow the user to change the font size to their preference-->
+        <button onclick="changeFontSize1('increase')">A+</button>
+        <button onclick="changeFontSize1('decrease')">A-</button>
+        <!--the user can slect the colour that he want the background to be-->
+        <div class="select">
+            <div class="change-bg">
+                <select onchange="myFunction(this.value)" style="width: 105px; background: #008BB0; color: #fff;">
+                    <option value="#fff">None</option>
+                    <option value="#89CFF0">Blue</option>
+                    <option value="#FF7276">Red</option>
+                    <option value="#05ef00">Green</option>
+                    <option value="#eee800">Yellow</option>
+                    <option value="#ffa500">Orange</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--javascript hyperlink-->
+    <script script src="animation.js"></script>
+    <!--footer with links to all the other pages on the website-->
+    <div class="user-details">
+        <div class="footer">
+            <div class="social2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product1.html">Hypertrax</a></li>
+                    <li><a href="product2.html">Cervitrac</a></li>
+                    <li> <a href="product3.html">Knee-Pro</a></li>
+                    <li><a href="product4.html">Lumbartrax</a></li>
+                    <li> <a href="product5.html">Muscle Gun</a></li>
+                    <li><a href="Register.html">Register</a></li>
+            </div>
+            <!--links to multiple social media platforms-->
+            <div class="social">
+                <a href="https://instagram.com//" class="fa fa-instagram"></a>
+                <a href="https://facebook.com//" class="fa fa-facebook"></a>
+                <a href="https://youtube.com//" class="fa fa-youtube"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://linkedin.com//" class="fa fa-linkedin"></a>
+            </div>
+            <!--copyright-->
+            <p class="copyright">
+                GoPhysio. @ 2021
+            </p>   
+        </div>
+    </div>  
+
+</body>
+</html>

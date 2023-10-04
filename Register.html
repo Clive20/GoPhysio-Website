@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <!--the three bars icon has been implemented to cater for phones and tablets-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <!-- logo and nav bar pages-->
+            <label class="logo">GoPhysio.</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product1.html">Hypertrax</a></li>
+                <li><a href="product2.html">Cervitrac</a></li>
+                <li><a href="product3.html">Knee-Pro</a></li>
+                <li><a href="product4.html">Lumbartrax</a></li>
+                <li><a href="product5.html">Muscle Gun</a></li>
+                <li><a class="active" href="Register.html">Register</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <div class="login">
+                <div class="container1">
+                    <div class="title">Registration</div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Name</span>
+                                <!--The user will type his deatails in the place holder-->
+                                <input type="text" placeholder="Enter user here" id="t1" class="tb" />
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email Address</span>
+                                <input type="text" placeholder="Enter Email Address here" id="t2" class="tb" />
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Username</span>
+                                <input type="text" placeholder="Enter Username here" id="t3" class="tb" />
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Password</span>
+                                <input type="password" placeholder="Enter Password here" id="t4" class="tb" />
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Confirm Password</span>
+                                <input type="password" placeholder="Enter Password here" id="t5" class="tb" />
+                            </div>
+                        </div>
+                        <div class="register-button">
+                            <input type="submit" value="Create Account" class="btn" onclick="registration()" />
+                        </div>
+                        <!--javascript hyperlink-->
+                        <script src="animation.js"></script>  
+                </div>
+            </div>
+        </div>
+
+        <div class="container0">
+            <!--buttons that allow the user to change the font size to their preference-->
+            <button class="increaseFont" value="increase"> a+ </button>
+            <button class="decreaseFont" value="decrease"> a- </button>
+            <!--the user can slect the colour that he want the background to be-->
+            <div class="select">
+                <div class="change-bg">
+                    <select onchange="myFunction(this.value)" style="width: 105px; background: #008BB0; color: #fff;">
+                        <option value="#fff">None</option>
+                        <option value="#89CFF0">Blue</option>
+                        <option value="#FF7276">Red</option>
+                        <option value="#05ef00">Green</option>
+                        <option value="#eee800">Yellow</option>
+                        <option value="#ffa500">Orange</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!--footer with links to all the other pages on the website-->
+        <div class="user-details">
+            <div class="footer">
+                <div class="social2">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product1.html">Hypertrax</a></li>
+                        <li><a href="product2.html">Cervitrac</a></li>
+                        <li> <a href="product3.html">Knee-Pro</a></li>
+                        <li><a href="product4.html">Lumbartrax</a></li>
+                        <li> <a href="product5.html">Muscle Gun</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                </div>
+                <!--links to multiple social media platforms-->
+                <div class="social">
+                    <a href="https://instagram.com//" class="fa fa-instagram"></a>
+                    <a href="https://facebook.com//" class="fa fa-facebook"></a>
+                    <a href="https://youtube.com//" class="fa fa-youtube"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://linkedin.com//" class="fa fa-linkedin"></a>
+                </div>
+                <!--copyright-->
+                <p class="copyright">
+                    GoPhysio. @ 2021
+                </p>   
+            </div>
+        </div>  
+    </body>
+</html> 
